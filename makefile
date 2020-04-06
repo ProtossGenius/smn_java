@@ -1,6 +1,7 @@
 clean:
 	rm -rf ./datas/proto/*
 	rm -rf ./src/pb 
+	rm -rf ./src/smn_itf
 	cp $(GOPATH)/src/github.com/ProtossGenius/SureMoonNet/datas/proto/* ./datas/proto/
 
 test: clean
