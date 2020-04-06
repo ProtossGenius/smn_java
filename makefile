@@ -8,3 +8,6 @@ test: clean
 	smn_goitf2lang -lang=java -i=./datas/itfs -o=./src/
 	smn_protocpl -i ./datas/proto -o ./src -lang java
 
+import:
+	smcfg -install programs/maven
+	mvn -f pom.xml dependency:copy-dependencies
